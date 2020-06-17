@@ -32,7 +32,7 @@ class DetailsView(TemplateView):
     def get_context_data(self, **kwargs):
         kwargs['disc_name'] = self.kwargs['disc']
         kwargs['disc_manufacturer'] = self.kwargs['manufacturer']
-        kwargs['discs'] = Product.objects.filter(manufacturer=self.kwargs['manufacturer'],
+        kwargs['discs'] = Product.objects.filter(manufacturer__manufacturer_name=self.kwargs['manufacturer'],
                                                 disc=self.kwargs['disc'])
         return super().get_context_data(**kwargs)
 
