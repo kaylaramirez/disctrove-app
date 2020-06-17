@@ -1,0 +1,36 @@
+{% extends 'common/base.html' %}
+
+{% block content %}
+<div class='container p-5'>
+  {% comment %}{{ welcome_message }}{% endcomment %}
+
+  <h2>Welcome to DiscTrove</h2>
+  <p> why buy from DiscTrove? maybe put a little information here that talks
+      about brooks is dad and why he is saling the discs.
+  </p>
+
+  <div class='card new-items'>
+    <div class='card-header bg-secondary text-white'>New Discs</div>
+    <div class='card-body'> This will be a listing of all the new discs that
+      Brooks and his dad will add. This will be that disc added in the last
+      month.
+      <br>
+      <a href='#' class='btn btn-info' role='button'>See more</a>
+    </div>
+
+  </div>
+
+  <div class='card collector-items'>
+    <div class='card-header bg-secondary text-white'>Collector Discs</div>
+    <div class='card-body'> This will be a listing of all collector discs that
+      Brooks and his dad will add. Not sure how many discs will be listed here.
+      <br>
+      <a href='#' class='btn btn-info' role='button'>See more</a>
+    </div>
+  </div>
+
+
+  <br> <br> <br>
+  <p> YOU NEED MORE DISCS</p>
+</div>
+{% endblock %}

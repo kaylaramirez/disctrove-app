@@ -1,0 +1,24 @@
+{% extends 'common/base.html' %}
+
+{% load staticfiles %}
+
+{% block content %}
+<div class="container-fluid p-3 m-3">
+  <h2>{{ disc_manufacturer }} - {{ disc_name }}</h2>
+
+  <div class='card-columns'>
+  {% for disc in discs %}
+    <div class='card disc-image'>
+      <img src='/{{ disc.image }}' class='card-img-top img-responsive'>
+      <div class='card-body'>
+        <h4>{{ disc.disc }}</h4>
+        <p>should we put some info here</p>
+        <a href='#' class='btn btn-secondary' role='button'>See Details</a>
+        <a href='#' class='btn btn-success' role='button'>Buy now</a>
+      </div>
+
+    </div>
+  {% endfor %}
+  </div>
+</div>
+{% endblock %}

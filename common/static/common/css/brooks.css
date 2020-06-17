@@ -1,0 +1,54 @@
+.html{
+  font-family: 'Quicksand' !important;
+}
+
+.nav-logo {
+    width: 50px;
+    height: auto;
+    padding-left: 10px;
+}
+.navbar-custom {
+    background-color: 1057A7;
+}
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: white;
+}
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    color: white;
+}
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #ffffff;
+}
+.navbar-item {
+  text-align: right;
+}
+.navbar-brand{
+  padding-bottom: 0;
+  /* font-family: 'Kalam', cursive; */
+  /* font-family: 'Nothing You Could Do', cursive; */
+  /* font-family: 'Shadows Into Light Two', cursive; */
+  font-family: 'Courgette', cursive;
+  font-size: 2em;
+  /*text-decoration: underline;*/
+
+}
+.nav{
+  padding-bottom: 0;
+}
+
+.page-footer{
+  background: black;
+}
+.icon{
+  color: white;
+}
+
+.disc-image{
+  width: 20em;
+  height: auto;
+}
