@@ -7,9 +7,18 @@
     height: auto;
     padding-left: 10px;
 }
-.navbar-custom {
-    background-color: 1057A7;
+.navbar-custom{
+    background-color: #4078a5;
 }
+.my-account-link {
+    color: white;
+    font-size: 15px;
+}
+.my-account{
+    background-color: #4078a5;
+    border-bottom: white;
+}
+
 /* change the brand and text color */
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-text {
@@ -51,4 +60,30 @@
 .disc-image{
   width: 20em;
   height: auto;
+}
+@media only screen and (max-width: 997px) {
+  .navbar-collapse{
+    background-color:  #5a91bf;
+  }
+  .nav-item{
+    border-bottom: white;
+  }
+  .nav-cart, .s-form{
+      display: none;
+  }
+}
+.fa-stack[data-count]:after{
+  position:absolute;
+  right:10%;
+  top:12%;
+  content: attr(data-count);
+  font-size:35%;
+  padding:.6em;
+  border-radius:999px;
+  line-height:.75em;
+  color: white;
+  background:rgba(255,0,0,.85);
+  text-align:center;
+  min-width:2em;
+  font-weight:bold;
 }

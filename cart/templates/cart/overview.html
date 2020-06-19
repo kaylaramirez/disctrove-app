@@ -1,0 +1,21 @@
+{% extends 'common/base.html' %}
+
+{% block content %}
+    <div class="container-fluid d-flex flex-column grow">
+        <div class="row">
+            <div class="col-6">
+                <h2>Shipping Address</h2>
+            </div>
+            <div class="col-6">
+                <h2>Order Summary</h2>
+                <p>Subtotal</p>
+                <p>Shipping*</p>
+            </div>
+        </div>
+    </div>
+    {{ cart_message }}
+
+ We got a cart baby!
+{{ cart }}
+
+{% endblock %}

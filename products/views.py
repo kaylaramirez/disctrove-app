@@ -37,5 +37,5 @@ class DetailsView(TemplateView):
         return super().get_context_data(**kwargs)
 
 
-    #def get(self, request, *arg,**kwargs):
+    #def get(self, request, *arg, **kwargs):
     #    return self.render_to_response(self.get_context_data(**kwargs))
